@@ -1,0 +1,42 @@
+package com.model.TemplateMethodPattern;
+
+/**
+ * @Author: long
+ * @CreateTime: 2022-12-01  13:27
+ * @Description: stringDisplay实现了父类的三个抽象方法
+ * @Version: 1.0
+ */
+public class StringDisplay extends AbstractDisplay {
+    private String string;
+    private int width;
+    public StringDisplay(String string){
+        this.string = string;
+        this.width = string.getBytes().length;
+    }
+    public void open() {
+        printLine();
+    }
+
+    /**
+     * 在构造函数接收的字符串前后分别加上"|"并显示出来
+     */
+    public void print() {
+        System.out.println("|"+string+"|");
+    }
+
+    public void close() {
+        printLine();
+    }
+
+    /**
+     * 显示字符+----------+
+     */
+    private void printLine(){
+        System.out.print("+");
+        for(int i =0;i <width;i++){
+            System.out.print("-");
+        }
+        System.out.println("+");
+
+    }
+}
