@@ -3,7 +3,7 @@ package com.model.AdapterPattern_DuiX;
 /**
  * @Author: long
  * @CreateTime: 2022-11-30  21:56
- * @Description: TODO
+ * @Description: 需求
  * @Version: 1.0
  */
 public abstract class Print {

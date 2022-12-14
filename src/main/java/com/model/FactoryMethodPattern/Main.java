@@ -12,7 +12,9 @@ import com.model.FactoryMethodPattern.idcard.IDCardFactory;
  */
 public class Main {
     public static void main(String[] args) {
+        //父工厂 factory = 子工厂
         Factory factory = new IDCardFactory();
+        //父产品 产品 = factory.创建
         Product card1 = factory.create("小明");
         Product card2 = factory.create("小王");
         Product card3 = factory.create("小红");

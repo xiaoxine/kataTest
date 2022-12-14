@@ -11,6 +11,11 @@ public class Book {
     public Book(String name){
         this.name = name;
     }
+
+    /**
+     * 获取书的名字
+     * @return
+     */
     public String getName(){
         return name;
     }

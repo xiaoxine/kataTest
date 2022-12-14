@@ -3,7 +3,7 @@ package com.model.AdapterPattern;
 /**
  * @Author: long
  * @CreateTime: 2022-11-30  21:47
- * @Description: 现在的情况
+ * @Description: 指现在实际的情况
  * @Version: 1.0
  */
 public class Banner {

@@ -8,9 +8,12 @@ package com.model.TemplateMethodPattern;
  */
 public class Main {
     public static void main(String[] args) {
+        //生成一个持有‘H’，的CharDisplay类的实例
         AbstractDisplay d1 = new CharDisplay('H');
+        //父 子
         AbstractDisplay d2 = new StringDisplay("Hello,world.");
         AbstractDisplay d3 = new StringDisplay("breaking,bad");
+        //子调用继承父的display方法
         d1.display();
         d2.display();
         d3.display();

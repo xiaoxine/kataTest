@@ -8,11 +8,19 @@ package com.model.TemplateMethodPattern;
  */
 public class StringDisplay extends AbstractDisplay {
     private String string;
-    private int width;
+    private int width; //以字节为单位计算出字符串长度
+    /**
+     * 构造器接收的字符被保存在字段中,同时字符的字节长度也保存在字段中。
+     * @param string
+     */
     public StringDisplay(String string){
         this.string = string;
         this.width = string.getBytes().length;
     }
+
+    /**
+     * 重写open方法
+     */
     public void open() {
         printLine();
     }

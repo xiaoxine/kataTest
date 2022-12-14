@@ -7,7 +7,12 @@ package com.model.TemplateMethodPattern;
  * @Version: 1.0
  */
 public class CharDisplay extends AbstractDisplay{
-    private char ch;
+    private char ch; //需要显示的字符
+
+    /**
+     * 构造器接收的字符被保存在字段中
+     * @param ch
+     */
     public CharDisplay(char ch){
         this.ch = ch;
     }

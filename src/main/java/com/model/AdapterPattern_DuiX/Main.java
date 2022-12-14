@@ -6,7 +6,7 @@ import com.model.AdapterPattern.PrintBanner;
 /**
  * @Author: long
  * @CreateTime: 2022-11-30  21:52
- * @Description: 通过PrintBanner类来显示字符串
+ * @Description: 通过PrintBanner适配器类来显示字符串
  * @Version: 1.0
  */
 public class Main {
